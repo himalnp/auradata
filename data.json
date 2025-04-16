@@ -1,0 +1,35 @@
+{
+  "students": [
+    {"name": "Bhabesh", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Ritesh", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Sujit", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Kunal", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Advik", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Niyam", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Anun", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Ryan", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Kapil", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Himal", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Aakrist", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Ajdipt", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Kausal", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Aakarshan", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Nishan", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Sudip", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Utkrist", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Promish", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Aamisha", "aura": 0, "gender": "female", "badge": ""},
+    {"name": "Pemba", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Aayush", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Swornim", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Prashant", "aura": 0, "gender": "male", "badge": ""},
+    {"name": "Kasish", "aura": 0, "gender": "female", "badge": ""},
+    {"name": "Supram", "aura": 0, "gender": "male", "badge": ""}
+  ],
+  "history": {},
+  "monthlyLeaderboard": [],
+  "settings": {
+    "theme": "light",
+    "password": "admin123" // Change this!
+  }
+}

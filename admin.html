@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1><i class="fas fa-cogs"></i> ADMIN PANEL</h1>
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Main</a>
+        </header>
+
+        <div class="admin-grid">
+            <!-- Student Management -->
+            <section class="admin-card">
+                <h2><i class="fas fa-user-edit"></i> Student Management</h2>
+                <div class="form-group">
+                    <label for="student-select">Select Student:</label>
+                    <select id="student-select" class="form-control"></select>
+                </div>
+                <div class="form-group">
+                    <label for="aura-points">Aura Points:</label>
+                    <input type="number" id="aura-points" class="form-control" placeholder="Enter points">
+                </div>
+                <div class="button-group">
+                    <button id="add-aura" class="action-btn success"><i class="fas fa-plus"></i> Add</button>
+                    <button id="subtract-aura" class="action-btn warning"><i class="fas fa-minus"></i> Subtract</button>
+                </div>
+            </section>
+
+            <!-- Badge Management -->
+            <section class="admin-card">
+                <h2><i class="fas fa-medal"></i> Badge Management</h2>
+                <div class="form-group">
+                    <label for="badge-student-select">Select Student:</label>
+                    <select id="badge-student-select" class="form-control"></select>
+                </div>
+                <div class="form-group">
+                    <label for="badge-type">Select Badge:</label>
+                    <select id="badge-type" class="form-control">
+                        <option value="">No Badge</option>
+                        <option value="🥇">Gold (🥇)</option>
+                        <option value="🥈">Silver (🥈)</option>
+                        <option value="🥉">Bronze (🥉)</option>
+                        <option value="⭐">Star (⭐)</option>
+                    </select>
+                </div>
+                <button id="assign-badge" class="action-btn"><i class="fas fa-award"></i> Assign Badge</button>
+            </section>
+
+            <!-- Theme Control -->
+            <section class="admin-card">
+                <h2><i class="fas fa-paint-brush"></i> Theme Control</h2>
+                <div class="theme-options">
+                    <div class="theme-option" data-theme="dark">
+                        <div class="theme-preview dark-theme"></div>
+                        <span>Dark</span>
+                    </div>
+                    <div class="theme-option" data-theme="light">
+                        <div class="theme-preview light-theme"></div>
+                        <span>Light</span>
+                    </div>
+                    <div class="theme-option" data-theme="blue">
+                        <div class="theme-preview blue-theme"></div>
+                        <span>Blue</span>
+                    </div>
+                </div>
+                <button id="update-theme" class="action-btn"><i class="fas fa-check"></i> Apply Theme</button>
+            </section>
+
+            <!-- Student Editor -->
+            <section class="admin-card">
+                <h2><i class="fas fa-user-plus"></i> Student Editor</h2>
+                <div class="form-group">
+                    <label for="new-student-name">Student Name:</label>
+                    <input type="text" id="new-student-name" class="form-control" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="new-student-gender">Gender:</label>
+                    <select id="new-student-gender" class="form-control">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="button-group">
+                    <button id="add-student" class="action-btn success"><i class="fas fa-plus"></i> Add Student</button>
+                    <button id="remove-student" class="action-btn danger"><i class="fas fa-trash"></i> Remove</button>
+                </div>
+            </section>
+
+            <!-- Champion Editor -->
+            <section class="admin-card">
+                <h2><i class="fas fa-crown"></i> Champion Editor</h2>
+                <div class="form-group">
+                    <label for="champion-position">Position:</label>
+                    <select id="champion-position" class="form-control">
+                        <option value="1">1st Place</option>
+                        <option value="2">2nd Place</option>
+                        <option value="3">3rd Place</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="champion-student">Assign Student:</label>
+                    <select id="champion-student" class="form-control"></select>
+                </div>
+                <button id="assign-champion" class="action-btn"><i class="fas fa-user-tie"></i> Assign Champion</button>
+            </section>
+        </div>
+    </div>
+
+    <script type="module" src="js/admin.js"></script>
+</body>
+</html>

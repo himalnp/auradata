@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Counter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="particles"></div>
+    
+    <header class="glass">
+        <h1><span class="glitch" data-text="AURA COUNTER">AURA COUNTER</span></h1>
+        <div class="header-controls">
+            <button id="theme-toggle" class="holographic-btn"><i class="fas fa-palette"></i> Theme</button>
+            <a href="login.html" class="admin-btn holographic-btn"><i class="fas fa-lock"></i> Admin</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Current Top 3 -->
+        <section class="podium-section">
+            <h2 class="section-title"><i class="fas fa-trophy"></i> CURRENT CHAMPIONS</h2>
+            <div class="podium">
+                <div class="position second" id="second-place">
+                    <div class="rank-badge">2</div>
+                    <div class="student-info">
+                        <h3 class="name">Loading...</h3>
+                        <div class="aura-display"><span class="aura">0</span> Aura</div>
+                        <div class="badge-display"></div>
+                        <div class="history-btn"><i class="fas fa-history"></i> View History</div>
+                    </div>
+                </div>
+                <div class="position first" id="first-place">
+                    <div class="rank-badge">1</div>
+                    <div class="student-info">
+                        <h3 class="name">Loading...</h3>
+                        <div class="aura-display"><span class="aura">0</span> Aura</div>
+                        <div class="badge-display"></div>
+                        <div class="history-btn"><i class="fas fa-history"></i> View History</div>
+                    </div>
+                </div>
+                <div class="position third" id="third-place">
+                    <div class="rank-badge">3</div>
+                    <div class="student-info">
+                        <h3 class="name">Loading...</h3>
+                        <div class="aura-display"><span class="aura">0</span> Aura</div>
+                        <div class="badge-display"></div>
+                        <div class="history-btn"><i class="fas fa-history"></i> View History</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboards -->
+        <section class="leaderboards-section">
+            <div class="leaderboard glass male">
+                <div class="leaderboard-header">
+                    <h3><i class="fas fa-mars"></i> MALE LEADERS</h3>
+                </div>
+                <ol id="male-leaderboard"></ol>
+            </div>
+            <div class="leaderboard glass female">
+                <div class="leaderboard-header">
+                    <h3><i class="fas fa-venus"></i> FEMALE LEADERS</h3>
+                </div>
+                <ol id="female-leaderboard"></ol>
+            </div>
+        </section>
+
+        <!-- All Students -->
+        <section class="students-section">
+            <h2 class="section-title"><i class="fas fa-users"></i> STUDENT ROSTER</h2>
+            <div class="student-grid" id="student-list"></div>
+        </section>
+
+        <!-- History Modal -->
+        <div class="modal" id="history-modal">
+            <div class="modal-content glass">
+                <span class="close-modal">&times;</span>
+                <h2><i class="fas fa-history"></i> <span id="history-title">Aura History</span></h2>
+                <div class="history-content" id="history-content"></div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
